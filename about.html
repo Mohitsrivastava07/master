@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </head>
+    <style>
+    .container-fluid {
+        width: 100%;
+    }
+    .carousel-item img {
+        height: 500px;    
+        object-fit: cover;
+    }
+
+</style>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"
+            data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong><i class="bi bi-book fw-bold"></i>University</a></strong>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse my-2" id="navbarMain">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Graduation Program
+                            </a>
+                            <ul class="dropdown-menu">
+                                Graduation
+                                <li class="dropdown-submenu">
+                                    <a class="nav-link dropdown-toggle"
+                                        href="#">
+                                        ENGINEERING
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="btech/btech_cse.html">B-TECH CSE</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="btech/btech_cse_ai.html">B-TECH
+                                                (CSE)-Ai</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="btech/btech_cse_ml.html">B-TECH (CSE)-Ml in
+                                                Collaboration with
+                                                IBM</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="btech/btech_cse_ai_block_chain.html">B-TECH (CSE)-Ai and
+                                                Block Chain with
+                                                IBM</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="nav-link dropdown-toggle"
+                                        href="#">
+                                        MANAGEMENT
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="bba/b.com_hons.html">B.COM.(Hons.)</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="bba/bba.html">BBA</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="bba/bba_professional.html">BBA
+                                                (Professional)</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="bba/bba_business_analystics.html">BBA - Business
+                                                Analystics (In
+                                                Collaboration with IBM)</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="bba/bba_logistics_supply_chain.html">BBA (Logistics and
+                                                Suply Chain
+                                                Management)</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="nav-link dropdown-toggle"
+                                        href="#">
+                                        COMPUTER APPLICATION
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="bca/bca.html">BCA</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="bca/bca_ds.html">BCA (Data
+                                                Science)</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="bca/bca_ai.html">BCA (Artificial
+                                                Intelligence)</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="bca/bca_cyber_security_forensics.html">BCA (Cyber Security and
+                                                Forensics)</a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="/bca/bca_ml.html">BCA (Machine
+                                                Learning)</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Postgraduation Program
+                                </a>
+                                <ul class="dropdown-menu">
+                                    Postgraduation
+                                    <li class="dropdown-submenu">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#">
+                                            ENGINEERING
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="mtech/mtech_cse.html">M-TECH CSE</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="mtech/mtech_ai.html">M-TECH (CSE)-Ai
+                                                    <span
+                                                        class="badge text-bg-secondary">New</span></a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#">
+                                            MANAGEMENT
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="mba/mcom.html">M.COM.</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="mba/mba.html">MBA</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="mba/mba_integrated.html">MBA
+                                                    (Integrated)</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#">
+                                            COMPUTER APPLICATION
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="mca/mca.html">MCA</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="mca/mca_ds.html">MCA (Data
+                                                    Science)</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="mca/mca_ai.html">MCA (Artificial
+                                                    Intelligence)<span
+                                                        class="badge text-bg-secondary">New</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="mca/mca_ml.html">MCA (Machine
+                                                    Learning)<span
+                                                        class="badge text-bg-secondary">New</span></a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search"
+                                placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success m"
+                                type="submit">Search</button>
+                        </form>
+
+                        <!-- Button Login trigger modal -->
+                        <button type="button" class="btn btn-primary ms-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            Login
+                        </button>
+                        <!-- Login Modal -->
+                        <div class="modal fade" id="loginModal" tabindex="-1"
+                            aria-labelledby="loginModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5"
+                                            id="loginModalLabel">Login Page</h1>
+                                        <button type="button" class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="loginFormControlInput1"
+                                                class="form-label">Email
+                                                address</label>
+                                            <input type="email"
+                                                class="form-control"
+                                                id="loginFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <label for="loginPassword5"
+                                            class="form-label d-flex justify-content-between align-items-center"><span>
+                                                Password</span> <i
+                                                class="bi bi-eye-slash"
+                                                id="loginToggle"
+                                                style="cursor: pointer;"></i></label>
+                                        <input type="password"
+                                            id="loginPassword5"
+                                            class="form-control"
+                                            aria-describedby="loginPasswordHelp">
+
+                                        <div id="loginPasswordHelp"
+                                            class="form-text">
+                                            Your password must be 8-20
+                                            characters long, contain letters and
+                                            numbers,
+                                            and
+                                            must not contain spaces, special
+                                            characters, or emoji.
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button"
+                                            class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button"
+                                            class="btn btn-primary">Save
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button Signup trigger modal -->
+                        <button type="button" class="btn btn-success ms-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#signupModal">
+                            SignUp
+                        </button>
+                        <!-- SignUp Modal -->
+                        <div class="modal fade" id="signupModal" tabindex="-1"
+                            aria-labelledby="signupModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5"
+                                            id="signupModalLabel">SignUpPage</h1>
+                                        <button type="button" class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="signupFormControlInput1"
+                                                class="form-label">Email
+                                                address</label>
+                                            <input type="email"
+                                                class="form-control"
+                                                id="signupFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <label for="signupPassword5"
+                                            class="form-label d-flex justify-content-between align-items-center"><span>
+                                                Create Password</span> <i
+                                                class="bi bi-eye-slash"
+                                                id="signupToggle"
+                                                style="cursor: pointer;"></i></label>
+                                        <input type="password"
+                                            id="signupPassword5"
+                                            class="form-control"
+                                            aria-describedby="signupPasswordHelp">
+                                        <label for="signupConfirmPassword5"
+                                            class="form-label d-flex justify-content-between align-items-center"><span>
+                                                Confirm Password</span> <i
+                                                class="bi bi-eye-slash mt-2"
+                                                id="signupConfirmToggle"
+                                                style="cursor: pointer;"></i></label>
+                                        <input type="password"
+                                            id="signupConfirmPassword5"
+                                            class="form-control"
+                                            aria-describedby="signupPasswordHelp">
+
+                                        <div id="signupPasswordHelp"
+                                            class="form-text">
+                                            Your password must be 8-20
+                                            characters long, contain letters and
+                                            numbers,
+                                            and
+                                            must not contain spaces, special
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button"
+                                            class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button"
+                                            class="btn btn-primary">Save
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleIndicators" class="carousel slide mt-1">
+            <div class="carousel-indicators">
+                <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/vadim-sherbakov-d6ebY-faOO0-unsplash.jpg"
+                        class="d-block w-100"
+                        alt>
+                </div>
+                <div class="carousel-item">
+                    <img src="image/pang-yuhao-_kd5cxwZOK4-unsplash.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="image/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg"
+                        class="d-block w-100"
+                        alt>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div
+            class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary my-1">
+            <div class="col-lg-6 px-0">
+                <h1 class="display-4 fst-italic fw-bold">Professional
+                    University</h1>
+                <p class="lead my-3"> Professional University (PU) is a private
+                    university situated in Phagwara, Punjab, India.
+                    The university was established in 2005 by International
+                    Trust, under The Professional University Act, 2005
+                    (Punjab Act 25 of 2005) and started operation in 2006.The
+                    university campus spreads over 600 acres in boundary
+                    on the outskirts of Jalandhar and houses over 30,000
+                    students (as of 2020)</p>
+            </div>
+        </div>
+
+        <div class="col-md-11 mx-5">
+            <div
+                class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong
+                        class="d-inline-block mb-2 text-success-emphasis"></strong>
+                    <h3 class="mb-0 my-8">Professional University</h3>
+                    <p class="mb-auto my-10">The University is ranked glorious
+                        on various parameters by
+                        acclaimed bodies and is a recipient of various awards
+                        including the Best Private
+                        University Award by ASSOCHAM in 2017, presented by Sh.
+                        Prakash Javadekar Union
+                        Minister of HRD, Govt. of India. With internationally
+                        benchmarked curricula,
+                        innovative pedagogy, experiential learning, and 200+
+                        foreign tie-ups for equitable
+                        and affordable quality education, the University is
+                        poised to establish itself as
+                        a Centre of Excellence in Research. This is the first
+                        University approved by ICAR
+                        in India because of its excellence in agriculture
+                        academic.</p>
+                </div>
+                <div class="col-auto d-none d-lg-block my-2 mx-2">
+                    <img class="bd-placeholder-img" width="380" height="400"
+                        border-radius="10px"
+                        src="image/rohim-ari-OONmWOXwPPE-unsplash.jpg" alt>
+                </div>
+            </div>
+        </div>
+
+        <section class="top-courses p-0" id="top-courses">
+            <div class="top_courses_part">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section_title">
+                                <h1>Graduation Courses &amp; Fee</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="box">
+                                <div class="table-responsive">
+                                    <table class="couresList table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">B-Tech
+                                                        (CSE)
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span class="price">2.4-3.8
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">B-Tech
+                                                        (CSE)-AI
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span class="price">2.40
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">B-Tech
+                                                        (CSE)-ML
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.60-3.80
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">B-Tech
+                                                        (CSE)-AI and Block Chain
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.90-3.90
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">B-Com.
+                                                        (Hons.)
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span class="price">2.10
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">BBA
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">1.40-1.80
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">BBA
+                                                        (Professional)
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span class="price">2.70
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">BBA
+                                                        (Business
+                                                        Analystics)</a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.60-3.20
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">BBA
+                                                        (Logistics and Supply
+                                                        Chain Management)
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.90-3.20
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">BCA</a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.40-2.60
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">BCA
+                                                        (Data Science)</a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.60-2.80
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">BCA
+                                                        (Artificial
+                                                        Intelligence)</a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.90-3.10
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">BCA
+                                                        (Cyber Security and
+                                                        Forensics)</a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">3.15-3.40
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">BCA
+                                                        (Machine Learning)</a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.85-3.00
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn"></a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.40-2.60
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-courses p-0" id="top-courses">
+            <div class="top_courses_part">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section_title">
+                                <h1>Postgraduation Courses &amp; Fee</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="box">
+                                <div class="table-responsive">
+                                    <table class="couresList table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">M-Tech
+                                                        (CSE)
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.50-3.20
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">M-Tech
+                                                        (CSE)-AI
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.60-3.40
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">M.Com.
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.60-2.90
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">MBA
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.40-2.70
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">MBA
+                                                        (Integrated)
+                                                    </a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.80-3.30
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">MCA</a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.20-2.50
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">MCA
+                                                        (Data Science)</a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.50-2.80
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="courseName">
+                                                    <a
+                                                        href="javascript:void(0);"
+                                                        class="dto-get-btn">MCA
+                                                        (Artificial
+                                                        Intelligence)</a>
+                                                </td>
+                                                <td class="courseFees">
+                                                    <span class="title">Annual
+                                                        Fee</span>
+                                                    <span
+                                                        class="price">2.95-3.20
+                                                        Lac</span>
+                                                </td>
+                                                <td class="btn-div">
+                                                    <a href="#"
+                                                        class="btn btn-sm btn-outline-primary">Apply
+                                                        Now</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container d-flex bg-light p-4 rounded">
+            <div class="card m-4" style="width: 16rem;">
+                <img src="image/mariia-shalabaieva-GSmXdBMjzcQ-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Highest Package</h5>
+                    <p class="card-text fs-5">65 LPA</p>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 16rem;">
+                <img src="image/farhat-altaf-HVmJdz6Bqhs-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Average Package</h5>
+                    <p class="card-text fs-5">5 LPA</p>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 16rem;">
+                <img src="image/balazs-ketyi-aaCuRsb7aUc-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Number of Companies Visited</h5>
+                    <p class="card-text fs-5">1500+</p>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 16rem;">
+                <img src="image/declan-sun-_nAtLfHwEbU-unsplash.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">% of Student Placed</h5>
+                    <p class="card-text fs-5">98%</p>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script>
+        document.querySelectorAll('.dropdown-submenu > a').forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                let currentSubmenu = this.nextElementSibling;
+
+                // Close all other submenus
+                document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (menu) {
+                    if (menu !== currentSubmenu) {
+                        menu.classList.remove('show');
+                    }
+                });
+
+                // Toggle current submenu
+                currentSubmenu.classList.toggle('show');
+            });
+        });
+    </script>
+
+        <script>
+        function togglePassword(toggleId, inputId) {
+            const toggle = document.getElementById(toggleId);
+            const input = document.getElementById(inputId);
+
+            toggle.addEventListener("click", () => {
+                if (input.type === "password") {
+                    input.type = "text";
+                    toggle.classList.replace("bi-eye-slash", "bi-eye");
+                } else {
+                    input.type = "password";
+                    toggle.classList.replace("bi-eye", "bi-eye-slash");
+                }
+            });
+        }
+
+        togglePassword("loginToggle", "loginPassword5");
+        togglePassword("signupToggle", "signupPassword5");
+        togglePassword("signupConfirmToggle", "signupConfirmPassword5")
+    </script>
+
+    </body>
+
+</html>

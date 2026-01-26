@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </head>
+    <style>
+    .container-fluid {
+        width: 100%;
+    }
+    .carousel-item img {
+        height: 500px;    
+        object-fit: cover;
+    }
+
+</style>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"
+            data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong><i class="bi bi-book fw-bold"></i>University</a></strong>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarMain"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse my-2" id="navbarMain">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#"
+                                role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Graduation Program
+                            </a>
+                            <ul class="dropdown-menu">
+                                Graduation
+                                <li class="dropdown-submenu">
+                                    <a class="nav-link dropdown-toggle"
+                                        href="#">
+                                        ENGINEERING
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="/btech/btech_cse.html">B-TECH CSE</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="/btech/btech_cse_ai.html">B-TECH
+                                                (CSE)-Ai</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="/btech/btech_cse_ml.html">B-TECH (CSE)-Ml in
+                                                Collaboration with
+                                                IBM</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="/btech/btech_cse_ai_block_chain.html">B-TECH (CSE)-Ai and
+                                                Block Chain with
+                                                IBM</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="nav-link dropdown-toggle"
+                                        href="#">
+                                        MANAGEMENT
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="/bba/b.com_hons.html">B.COM.(Hons.)</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="/bba/bba.html">BBA</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="/bba/bba_professional.html">BBA
+                                                (Professional)</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="/bba/bba_business_analystics.html">BBA - Business
+                                                Analystics (In
+                                                Collaboration with IBM)</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="/bba/bba_logistics_supply_chain.html">BBA (Logistics and
+                                                Suply Chain
+                                                Management)</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="nav-link dropdown-toggle active"
+                                        href="#">
+                                        COMPUTER APPLICATION
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="/bca/bca.html">BCA</a></li>
+                                        <li><a class="dropdown-item active"
+                                                href="/bca/bca_ds.html">BCA (Data
+                                                Science)</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="/bca/bca_ai.html">BCA (Artificial
+                                                Intelligence)</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="/bca/bca_cyber_security_forensics.html">BCA (Cyber Security and
+                                                Forensics)</a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="/bca/bca_ml.html">BCA (Machine
+                                                Learning)</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Postgraduation Program
+                                </a>
+                                <ul class="dropdown-menu">
+                                    Postgraduation
+                                    <li class="dropdown-submenu">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#">
+                                            ENGINEERING
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="/mtech/mtech_cse.html">M-TECH CSE</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="/mtech/mtech_ai.html">M-TECH (CSE)-Ai
+                                                    <span
+                                                        class="badge text-bg-secondary">New</span></a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#">
+                                            MANAGEMENT
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="/mba/mcom.html">M.COM.</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="/mba/mba.html">MBA</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="/mba/mba_integrated.html">MBA
+                                                    (Integrated)</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="nav-link dropdown-toggle"
+                                            href="#">
+                                            COMPUTER APPLICATION
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="/mca/mca.html">MCA</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="/mca/mca_ds.html">MCA (Data
+                                                    Science)</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="/mca/mca_ai.html">MCA (Artificial
+                                                    Intelligence)<span
+                                                        class="badge text-bg-secondary">New</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="/mca/mca_ml.html">MCA (Machine
+                                                    Learning)<span
+                                                        class="badge text-bg-secondary">New</span></a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search"
+                                placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success m"
+                                type="submit">Search</button>
+                        </form>
+
+                        <!-- Button Login trigger modal -->
+                        <button type="button" class="btn btn-primary ms-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            Login
+                        </button>
+                        <!-- Login Modal -->
+                        <div class="modal fade" id="loginModal" tabindex="-1"
+                            aria-labelledby="loginModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5"
+                                            id="loginModalLabel">Login Page</h1>
+                                        <button type="button" class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="loginFormControlInput1"
+                                                class="form-label">Email
+                                                address</label>
+                                            <input type="email"
+                                                class="form-control"
+                                                id="loginFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <label for="loginPassword5"
+                                            class="form-label d-flex justify-content-between align-items-center"><span>
+                                                Password</span> <i
+                                                class="bi bi-eye-slash"
+                                                id="loginToggle"
+                                                style="cursor: pointer;"></i></label>
+                                        <input type="password"
+                                            id="loginPassword5"
+                                            class="form-control"
+                                            aria-describedby="loginPasswordHelp">
+
+                                        <div id="loginPasswordHelp"
+                                            class="form-text">
+                                            Your password must be 8-20
+                                            characters long, contain letters and
+                                            numbers,
+                                            and
+                                            must not contain spaces, special
+                                            characters, or emoji.
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button"
+                                            class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button"
+                                            class="btn btn-primary">Save
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button Signup trigger modal -->
+                        <button type="button" class="btn btn-success ms-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#signupModal">
+                            SignUp
+                        </button>
+                        <!-- SignUp Modal -->
+                        <div class="modal fade" id="signupModal" tabindex="-1"
+                            aria-labelledby="signupModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5"
+                                            id="signupModalLabel">SignUpPage</h1>
+                                        <button type="button" class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="signupFormControlInput1"
+                                                class="form-label">Email
+                                                address</label>
+                                            <input type="email"
+                                                class="form-control"
+                                                id="signupFormControlInput1"
+                                                placeholder="name@example.com">
+                                        </div>
+                                        <label for="signupPassword5"
+                                            class="form-label d-flex justify-content-between align-items-center"><span>
+                                                Create Password</span> <i
+                                                class="bi bi-eye-slash"
+                                                id="signupToggle"
+                                                style="cursor: pointer;"></i></label>
+                                        <input type="password"
+                                            id="signupPassword5"
+                                            class="form-control"
+                                            aria-describedby="signupPasswordHelp">
+                                        <label for="signupConfirmPassword5"
+                                            class="form-label d-flex justify-content-between align-items-center"><span>
+                                                Confirm Password</span> <i
+                                                class="bi bi-eye-slash mt-2"
+                                                id="signupConfirmToggle"
+                                                style="cursor: pointer;"></i></label>
+                                        <input type="password"
+                                            id="signupConfirmPassword5"
+                                            class="form-control"
+                                            aria-describedby="signupPasswordHelp">
+
+                                        <div id="signupPasswordHelp"
+                                            class="form-text">
+                                            Your password must be 8-20
+                                            characters long, contain letters and
+                                            numbers,
+                                            and
+                                            must not contain spaces, special
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button"
+                                            class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button"
+                                            class="btn btn-primary">Save
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <strong><i class="bi bi-book fw-bold"></i>Professional University</a></strong>
+        <header
+            class=" position-relative d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border ">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-body-secondary"><img
+                        src="/image/pict4life-CsDJRDqtKKY-unsplash.jpg" width="1363"
+                        height="150" alt></span>
+            </div>
+            <div
+                class="position-absolute top-50 start-0 translate-middle-y ps-4 text-white fw-bold fs-4">
+                BCA-DS (Bachelor of Computer Applications In Data Science)
+            </div>
+        </header>
+
+        <div
+            class="wpb_row vc_inner vc_row vc_row-fluid  d-flex gap-3  attched-false   "><div
+                class="wpb_column vc_column_container vc_col-sm-12"><div
+                    class="vc_column-inner"><div class="wpb_wrapper"><h2
+                            id="fancy-title-7"
+                            class="mk-fancy-title  simple-style   color-single">
+                            <span><p>Course Details</p>
+                            </span></h2><div class="clearboth"></div><div
+                            class=" vc_custom_1759141673968"><div
+                                id="text-block-8"
+                                class="mk-text-block   p-3 bg-light faqs"><table
+                                    class="table-nogrid table table-bordered"><tbody><tr><td
+                                                width="130"><strong>School
+                                                    Name:</strong></td><td>School
+                                                of
+                                                Computer Application</td></tr><tr><td><strong>Programe:</strong></td><td>BCA (Data Science)</td></tr><tr><td><strong>Course
+                                                    Length:</strong></td><td>3 years</td></tr><tr><td><strong>Session
+                                                    Start
+                                                    Date:</strong></td><td>August</td></tr><tr><td><strong>Course
+                                                    Type:</strong></td><td>Full
+                                                Time</td></tr><tr><td
+                                                align="justify"><strong>Eligibility
+                                                    Criteria:</strong></td><td
+                                                align="justify"><strong>Eligibility:</strong>&nbsp;A minimum aggregate of 50% or equivalent in 10+2 with Mathematics as a compulsory subject. Relaxation in qualification and reservation is as per UGC and State Govt. norms.<br>
+                                                </td></tr><tr><td><strong>Programme
+                                                    Fee:</strong></td><td>Rs.
+                                                44,250 /- Per
+                                                Semester-</td></tr><tr><td><strong>Syllabus</strong></td><td><a
+                                                    class="link"
+                                                    href
+                                                    target="_blank"
+                                                    rel>Click here to
+                                                    Download</a></td></tr></tbody></table><div
+                                    class="clearboth"></div></div></div></div></div></div></div>
+        <div class="container d-flex bg-light p-4 rounded">
+            <div class="card m-4" style="width: 16rem;">
+                <img src="/image/mariia-shalabaieva-GSmXdBMjzcQ-unsplash.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Highest Package</h5>
+                    <p class="card-text fs-5">65 LPA</p>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 16rem;">
+                <img src="/image/farhat-altaf-HVmJdz6Bqhs-unsplash.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Average Package</h5>
+                    <p class="card-text fs-5">5 LPA</p>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 16rem;">
+                <img src="/image/balazs-ketyi-aaCuRsb7aUc-unsplash.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Number of Companies Visited</h5>
+                    <p class="card-text fs-5">1500+</p>
+                </div>
+            </div>
+            <div class="card m-4" style="width: 16rem;">
+                <img src="/image/declan-sun-_nAtLfHwEbU-unsplash.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">% of Student Placed</h5>
+                    <p class="card-text fs-5">98%</p>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+
+        <script>
+        document.querySelectorAll('.dropdown-submenu > a').forEach(function (element) {
+            element.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                let currentSubmenu = this.nextElementSibling;
+
+                // Close all other submenus
+                document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (menu) {
+                    if (menu !== currentSubmenu) {
+                        menu.classList.remove('show');
+                    }
+                });
+
+                // Toggle current submenu
+                currentSubmenu.classList.toggle('show');
+            });
+        });
+    </script>
+
+        <script>
+        function togglePassword(toggleId, inputId) {
+            const toggle = document.getElementById(toggleId);
+            const input = document.getElementById(inputId);
+
+            toggle.addEventListener("click", () => {
+                if (input.type === "password") {
+                    input.type = "text";
+                    toggle.classList.replace("bi-eye-slash", "bi-eye");
+                } else {
+                    input.type = "password";
+                    toggle.classList.replace("bi-eye", "bi-eye-slash");
+                }
+            });
+        }
+
+        togglePassword("loginToggle", "loginPassword5");
+        togglePassword("signupToggle", "signupPassword5");
+        togglePassword("signupConfirmToggle", "signupConfirmPassword5")
+    </script>
+
+    </body>
+
+</html>
