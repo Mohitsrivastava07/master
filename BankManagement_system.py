@@ -188,7 +188,7 @@ while True:
                 img.save(f"{name}_QR.png")
                 
                 # show the QR code
-                # img.show()
+                img.show()
                 
                 print(f"QR code generated for {name} and saved as {name}_QR.png")
             else:
