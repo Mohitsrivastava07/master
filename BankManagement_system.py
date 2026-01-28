@@ -1,6 +1,7 @@
 import random
 import time
 import qrcode
+import sys
 
 records = {
     "Name" : ["Mohit", "Naitik", "Ayush"],
@@ -28,8 +29,12 @@ while True:
                 5. QR-Code 
                 6. Exits """)
 
-        choice = int(input("\nChoice any option to go to next process --> "))
-        print(f"You choice is {choice}")
+        try:
+            choice = int(input("\nChoice any option to go to next process --> "))
+            print(f"You choice is {choice}")
+        except ValueError:
+           print("Enter only number!")
+           continue
 
         # for Account Creation
         if (choice == 1):
@@ -198,6 +203,8 @@ while True:
             print()
             
             ans = input("Do you want to exits (y/n) --> ")
-            if (ans == "y"):
-                break
+            if ans == "y":
+                sys.exit("Thank you for using Bank Management System")
+        else:
+            print("Invalid option! Please choose between 1–6.")
                 
