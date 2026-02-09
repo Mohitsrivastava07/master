@@ -1,0 +1,945 @@
+//.................................MERGE INSERT AND DELETE BY ARRAY AND ARRAYLIST....................................
+class MergeInsertAndDelete {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println(".........Choose Any Option (part1).........");
+        System.out.println("1. From Array");
+        System.out.println("2. From ArrayList");
+
+        int choice1;
+        while (true) {
+            try {
+                System.out.print("Enter the number you want to choice (part1) --> ");
+                choice1 = input.nextInt();
+                break;
+            }
+            catch (InputMismatchException a) {
+                System.out.println("Your choice1 is number NOT character");
+                input.next();
+            }
+        }
+
+        int choice2;
+        switch (choice1) {
+            case 1:
+                //1. From Array
+                System.out.println(".........Choose Any Option from Array (part2).........");
+                System.out.println("1. Inserted");
+                System.out.println("2. Deleted");
+
+                while (true) {
+                    try {
+                        System.out.print("Enter the number you want to choice (part2) --> ");
+                        choice2 = input.nextInt();
+                        break;
+                    }
+                    catch (InputMismatchException b) {
+                        System.out.println("Your choice1 is number NOT character (part2)");
+                        input.next();
+                    }
+                }
+
+                if (choice2 == 1) {
+                    System.out.println(".........Choose Any Option from Array (part3).........");
+                    System.out.println("1. Inserted At First");
+                    System.out.println("2. Inserted At Given Location");
+                    System.out.println("3. Inserted At End");
+
+                    int choice3;
+                    while (true) {
+                        try {
+                            System.out.print("Enter the number you want to choice (part3) --> ");
+                            choice3 = input.nextInt();
+                            break;
+                        }
+                        catch(InputMismatchException c) {
+                            System.out.println("Your choice1 is number NOT character (part3)");
+                            input.next();
+                        }
+                    }
+
+                    switch (choice3) {                       
+                        //INSERTED AT FIRST
+                        case 1:
+                            int number1;
+                            while (true) {
+                                try {
+                                    System.out.print("How many number you want to inserted in array --> ");
+                                    number1 = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException d) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            int[] arr = new int[number1+1];
+                            int element1;
+                            while (true) {
+                                //input the element in array
+                                try {
+                                    for (int i = 0; i < number1; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr[i] = input.nextInt();
+                                    }
+                                }
+                                catch (InputMismatchException e) {
+                                    System.out.println("Please enter the element in array to store as numeric NOT character");
+                                    input.next();
+                                }
+
+                                //input the element you want to inserted at first
+                                try {
+                                    System.out.print("Enter the element you want to inserted at fisrt in array --> ");
+                                    element1 = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException f) {
+                                    System.out.println("Please enter the element to inserted at first as numeric NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            //checking the element is exist or not
+                            for (int i = 0; i < number1; i++) {
+                                if (element1 == arr[i]) {
+                                    System.out.println("Your element is exits NOT inserted");
+                                    return;
+                                }
+                            }
+
+                            //shifting of the element in array
+                            for (int i = number1; i > 0; i--) {
+                                arr[i] = arr[i-1];
+                            }
+
+                            //inserted the element declarartion
+                            arr[0] =element1;
+
+                            //printing the array in linear traversal.
+                            System.out.print("Linear Traversal of array --> ");
+                            for (int i = 0; i <= number1; i++) {
+                                System.out.print(arr[i] + " ");
+                            }
+
+                            //printing the array in reverse traversal.
+                            System.out.print("\nReverse Traversal of array --> ");
+                            for (int i = number1; i >= 0; i--) {
+                                System.out.print(arr[i] + " ");
+                            }
+
+                            break;
+                        
+                        //INSERTED AT GIVEN LOCATION
+                        case 2:
+                            int number2;
+                            while (true) {
+                                try {
+                                    System.out.print("How many number you want to inserted in array --> ");
+                                    number2 = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException d) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            int[] arr2 = new int[number2+1];
+                            int element2;
+                            int index1;
+                            while (true) {
+                                //input the element in array
+                                try {
+                                    for (int i = 0; i < number2; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr2[i] = input.nextInt();
+                                    }
+                                }
+                                catch (InputMismatchException e) {
+                                    System.out.println("Please enter the element in array to store as numeric NOT character");
+                                    input.next();
+                                }
+
+                                //input the element you want to inserted at first
+                                try {
+                                    System.out.print("Enter the element you want to inserted at given index in array --> ");
+                                    element2 = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException f) {
+                                    System.out.println("Please enter the element to inserted at first as numeric NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            //input the index you want to inserted at which location
+                            while (true) {
+                                try {
+                                    System.out.print("Enter the index you want to inserted at which location in array --> ");
+                                    index1 = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException f) {
+                                    System.out.println("Please enter the element to inserted at first as numeric NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            //checking the element is exist or not
+                            for (int i = 0; i < number2; i++) {
+                                if (element2 == arr2[i]) {
+                                    System.out.println("Your element is exits NOT inserted");
+                                    return;
+                                }
+                            }
+
+                            //shifting the element
+                            for (int i = number2; i > index1; i--) {
+                                arr2[i] = arr2[i-1];
+                            }
+
+                            //inserted the element declarartion
+                            arr2[index1] = element2;
+
+                            //printing the array in linear traversal.
+                            System.out.print("Linear Traversal of array --> ");
+                            for (int i = 0; i <= number2; i++) {
+                                System.out.print(arr2[i] + " ");
+                            }
+
+                            //printing the array in reverse traversal.
+                            System.out.print("\nReverse Traversal of array --> ");
+                            for (int i = number2; i >= 0; i--) {
+                                System.out.print(arr2[i] + " ");
+                            }
+
+                            break;
+
+                        //INSERTED AT END
+                        case 3:
+                            int number3;
+                            while (true) {
+                                try {
+                                    System.out.print("How many number you want to inserted in array --> ");
+                                    number3 = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException d) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            int[] arr3 = new int[number3+1];
+                            int element3;
+                            while (true) {
+                                //input the element in array
+                                try {
+                                    for (int i = 0; i < number3; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr3[i] = input.nextInt();
+                                    }
+                                }
+                                catch (InputMismatchException e) {
+                                    System.out.println("Please enter the element in array to store as numeric NOT character");
+                                    input.next();
+                                }
+
+                                //input the element you want to inserted at first
+                                try {
+                                    System.out.print("Enter the element you want to inserted at fisrt in array --> ");
+                                    element3 = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException f) {
+                                    System.out.println("Please enter the element to inserted at first as numeric NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            //checking the element is exist or not
+                            for (int i = 0; i < number3; i++) {
+                                if (element3 == arr3[i]) {
+                                    System.out.println("Your element is exits NOT inserted");
+                                    return;
+                                }
+                            }
+
+                            //inserted the element declarartion
+                            arr3[number3] = element3;
+
+                            //printing the array in linear traversal.
+                            System.out.print("Linear Traversal of array --> ");
+                            for (int i = 0; i <= number3; i++) {
+                                System.out.print(arr3[i] + " ");
+                            }
+
+                            //printing the array in reverse traversal.
+                            System.out.print("\nReverse Traversal of array --> ");
+                            for (int i = number3; i >= 0; i--) {
+                                System.out.print(arr3[i] + " ");
+                            }
+
+                            break;
+
+                        default:
+                            System.out.println("Invalid choice2!");
+                    }
+                }
+                
+                else if (choice2 == 2) {
+                    System.out.println(".........Choose Any Option (part4).........");
+                    System.out.println("1. Deleted At First");
+                    System.out.println("2. Deleted At Given Location");
+                    System.out.println("3. Deleted At End");
+
+                    int choice4;
+                    while (true) {
+                        try {
+                            System.out.print("Enter the number you want to choice (part3) --> ");
+                            choice4 = input.nextInt();
+                            break;
+                        }
+                        catch(InputMismatchException c) {
+                            System.out.println("Your choice1 is number NOT character (part3)");
+                            input.next();
+                        }
+                    }   
+                    
+                    switch (choice4) {
+                        //DELETED AT FIRST
+                        case 1:
+                            int number1;
+                            while (true) {
+                                try {
+                                    System.out.print("How many number you want to inserted in array --> ");
+                                    number1 = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException d) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            int[] arr = new int[number1];
+                            int element1;
+                            while (true) {
+                                //input the element in array
+                                try {
+                                    for (int i = 0; i < number1; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr[i] = input.nextInt();
+                                    }
+                                    break;
+                                }
+                                catch (InputMismatchException e) {
+                                    System.out.println("Please enter the element in array to store as numeric NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            //deleting then shifting element in array
+                            for (int i = 0; i < number1-1; i++) {
+                                arr[i] = arr[i+1];
+                            }
+
+                            number1--;
+
+                            //printing the array after deleted in linear traversal form
+                            System.out.print("Linear Traversal of array --> ");
+                            for (int i = 0; i < number1; i++) {
+                                System.out.print(arr[i] + " ");
+                            }
+
+                            //printing the array after deleted in reverse traversal form
+                            System.out.print("\nReverse Traversal of array --> ");
+                            for (int i = number1-1; i >= 0; i--) {
+                                System.out.print(arr[i] + " ");
+                            }
+
+                            break;
+                        
+                        case 2:
+                            //DELETED AT GIVEN LOCATION
+                            int number2;
+                            while (true) {
+                                try {
+                                    System.out.print("How many number you want to inserted in array --> ");
+                                    number2 = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException d) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            int[] arr2 = new int[number2];
+                            while (true) {
+                                //input the element in array
+                                try {
+                                    for (int i = 0; i < number2; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr2[i] = input.nextInt();
+                                    }
+                                    break;
+                                }
+                                catch (InputMismatchException e) {
+                                    System.out.println("Please enter the element in array to store as numeric NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            int indexNum;
+                            while (true) {
+                                try {
+                                    System.out.print("Enter the index number you want to deleted --> ");
+                                    indexNum = input.nextInt();
+                                    break;
+                                }
+                                catch(InputMismatchException x) {
+                                    System.out.println("Please enter the index number in numerci value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            if (indexNum < 0 || indexNum >= number2) {
+                                System.out.print("Invalid indexing");
+                                return;
+                            }
+
+                            //shifting the value after deleting
+                            for (int i = indexNum; i < number2-1; i++) {
+                                arr2[i] = arr2[i+1];
+                            }
+
+                            number2--;
+
+                            //printing the array after deleted in linear traversal form
+                            System.out.print("Linear Traversal of array --> ");
+                            for (int i = 0; i < number2; i++) {
+                                System.out.print(arr2[i] + " ");
+                            }
+
+                            //printing the array after deleted in reverse traversal form
+                            System.out.print("\nReverse Traversal of array --> ");
+                            for (int i = number2-1; i >= 0; i--) {
+                                System.out.print(arr2[i] + " ");
+                            }
+
+                            break;
+
+                        case 3:
+                            //DELETED AT END
+                            int number3;
+                            while (true) {
+                                try {
+                                    System.out.print("How many number you want to inserted in array --> ");
+                                    number3 = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException d) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            int[] arr3 = new int[number3];
+                            while (true) {
+                                //input the element in array
+                                try {
+                                    for (int i = 0; i < number3; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr3[i] = input.nextInt();
+                                    }
+                                    break;
+                                }
+                                catch (InputMismatchException e) {
+                                    System.out.println("Please enter the element in array to store as numeric NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            //delete the last element
+                            number3--;
+                            
+                            //printing the array after deleted in linear traversal form
+                            System.out.print("Linear Traversal of array --> ");
+                            for (int i = 0; i < number3; i++) {
+                                System.out.print(arr3[i] + " ");
+                            }
+
+                            //printing the array after deleted in reverse traversal form
+                            System.out.print("\nReverse Traversal of array --> ");
+                            for (int i = number3-1; i >= 0; i--) {
+                                System.out.print(arr3[i] + " ");
+                            }
+
+                            break;
+
+                        default:
+                            System.out.println("Invalid Choice!");
+                            
+                    }
+                }
+                else {
+                    System.out.println("Invalid choice");
+                }
+                
+                break;
+            
+            case 2:
+                // 2.From ArrayList
+                System.out.println(".........Choose Any Option from ArrayList (part2).........");
+                System.out.println("1. Inserted");
+                System.out.println("2. Deleted");
+
+                int choiceB;
+                while (true) {
+                    try {
+                        System.out.print("Choose any option --> ");
+                        choiceB = input.nextInt();
+                        break;
+                    }
+                    catch (InputMismatchException m) {
+                        System.out.println("Plase enter the numeric value NOT character");
+                        input.next();
+                    }
+                }
+
+                if (choiceB == 1) {
+                    System.out.println(".........Choose Any Option from ArrayList (part3).........");
+                    System.out.println("1. Inserted At First");
+                    System.out.println("2. Inserted At Given Location");
+                    System.out.println("3. Inserted At End");
+
+                    int choiceB1;
+                    while (true) {
+                        try {
+                            System.out.print("Choose any option --> ");
+                            choiceB1 = input.nextInt();
+                            break;
+                        }
+                        catch (InputMismatchException m) {
+                            System.out.println("Plase enter the numeric value NOT character");
+                            input.next();
+                        }
+                    }
+
+                    int numberB;
+                    switch (choiceB1) {
+                        case 1:
+                            //inserted at first using ArrayList
+                            while (true) {
+                                try {
+                                    System.out.print("How many the element you want to inserted in arrayList --> ");
+                                    numberB = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException n) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            ArrayList<Integer> arr1 = new ArrayList<>();
+                            int elementB;
+
+                            while (true) {
+                                try {
+                                    //input the element in arrayList
+                                    for (int i = 0; i < numberB; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr1.add(input.nextInt());
+                                    }
+                                    
+                                }
+                                catch (InputMismatchException o) {
+                                    System.out.println("Please enter the element in ArrayList as number NOT character");
+                                    input.next();
+                                }
+
+                                try {
+                                    System.out.print("Enter the element you want to inserted in ArrayList --> ");
+                                    elementB = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException p) {
+                                    System.out.println("Please enter the eleemnt you want to inserted in numeric form NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            //checking the element exist or not
+                            for (int i = 0; i < numberB; i++) {
+                                if (elementB == arr1.get(i)) {
+                                    System.out.println("Element is found NOT inserted");
+                                    return;
+                                }
+                            }
+
+                            //inserted element 
+                            arr1.add(0, elementB);
+
+                            //printing the element of ArrayList in linear traversal
+                            System.out.print("Linear Traversal of ArrayList --> ");
+                            for (int i = 0; i < arr1.size(); i++) {
+                                System.out.print(arr1.get(i) + " ");
+                            }
+
+                            //printing the element of ArrayList in reverse traversal
+                            System.out.print("\nReverse traversal of arrayList --> ");
+                            for ( int i = arr1.size()-1; i >= 0; i--) {
+                                System.out.print(arr1.get(i) + " ");
+                            }
+
+                            break;
+                        
+                        case 2:
+                            //Inserted at given location
+                            int numberC;
+                            while (true) {
+                                try {
+                                    System.out.print("How many the element you want to inserted in arrayList --> ");
+                                    numberC = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException q) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            ArrayList<Integer> arr2 = new ArrayList<>();
+                            int elementC;
+
+                            while (true) {
+                                try {
+                                    //input the element in arrayList
+                                    for (int i = 0; i < numberC; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr2.add(input.nextInt());
+                                    }
+                                    
+                                }
+                                catch (InputMismatchException r) {
+                                    System.out.println("Please enter the element in ArrayList as number NOT character");
+                                    input.next();
+                                }
+
+                                try {
+                                    System.out.print("Enter the element you want to inserted in ArrayList --> ");
+                                    elementC = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException s) {
+                                    System.out.println("Please enter the eleemnt you want to inserted in numeric form NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            int indexNumB;
+                            while (true) {
+                                try {
+                                    System.out.print("Enter the index number where you want to inserted --> ");
+                                    indexNumB = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException t) {
+                                    System.out.println("Please enter the numeric number NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            //checking the element exist or not
+                            for (int i = 0; i < numberC; i++) {
+                                if (elementC == arr2.get(i)) {
+                                    System.out.println("Element is found NOT inserted");
+                                    return;
+                                }
+                            }
+
+                            //inserted element 
+                            arr2.add(indexNumB, elementC);
+
+                            //printing the element of ArrayList in linear traversal
+                            System.out.print("Linear Traversal of ArrayList --> ");
+                            for (int i = 0; i < arr2.size(); i++) {
+                                System.out.print(arr2.get(i) + " ");
+                            }
+
+                            //printing the element of ArrayList in reverse traversal
+                            System.out.print("\nReverse traversal of arrayList --> ");
+                            for ( int i = arr2.size()-1; i >= 0; i--) {
+                                System.out.print(arr2.get(i) + " ");
+                            }
+
+                            break;
+
+                        case 3:
+                            //Inserted at End
+                            int numberD;
+                            while (true) {
+                                try {
+                                    System.out.print("How many the element you want to inserted in arrrayList --> ");
+                                    numberD = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException q) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            ArrayList<Integer> arr3 = new ArrayList<>();
+                            int elementD;
+
+                            while (true) {
+                                try {
+                                    //input the element in arrayList
+                                    for (int i = 0; i < numberD; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr3.add(input.nextInt());
+                                    }
+                                    
+                                }
+                                catch (InputMismatchException r) {
+                                    System.out.println("Please enter the element in ArrayList as number NOT character");
+                                    input.next();
+                                }
+
+                                try {
+                                    System.out.print("Enter the element you want to inserted in ArrayList --> ");
+                                    elementD = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException s) {
+                                    System.out.println("Please enter the eleemnt you want to inserted in numeric form NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            //checking the element exist or not
+                            for (int i = 0; i < numberD; i++) {
+                                if (elementD == arr3.get(i)) {
+                                    System.out.println("Element is found NOT inserted");
+                                    return;
+                                }
+                            }
+
+                            //inserted element 
+                            arr3.add(numberD, elementD);
+
+                            //printing the element of ArrayList in linear traversal
+                            System.out.print("Linear Traversal of ArrayList --> ");
+                            for (int i = 0; i < arr3.size(); i++) {
+                                System.out.print(arr3.get(i) + " ");
+                            }
+
+                            //printing the element of ArrayList in reverse traversal
+                            System.out.print("\nReverse traversal of arrayList --> ");
+                            for ( int i = arr3.size()-1; i >= 0; i--) {
+                                System.out.print(arr3.get(i) + " ");
+                            }
+
+                            break;
+                        
+                        default:
+                            System.out.print("Invalid Choice number!");
+                    }
+                }
+
+                else if (choiceB == 2) {
+                    System.out.println(".........Choose Any Option from ArrayList (part3).........");
+                    System.out.println("1. Deleted At First");
+                    System.out.println("2. Deleted At Given Location");
+                    System.out.println("3. Deleted At End");
+
+                    int choiceB1;
+                    while (true) {
+                        try {
+                            System.out.print("Choose any option --> ");
+                            choiceB1 = input.nextInt();
+                            break;
+                        }
+                        catch (InputMismatchException m) {
+                            System.out.println("Plase enter the numeric value NOT character");
+                            input.next();
+                        }
+                    }
+
+                    int numberB;
+                    switch (choiceB1) {
+                        case 1:
+                            //deleted at first using ArrayList
+                            while (true) {
+                                try {
+                                    System.out.print("How many the element you want to inserted in arrayList --> ");
+                                    numberB = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException n) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            ArrayList<Integer> arr1 = new ArrayList<>();
+
+                            while (true) {
+                                try {
+                                    //input the element in arrayList
+                                    for (int i = 0; i < numberB; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr1.add(input.nextInt());
+                                    }
+                                    break;
+                                }
+                                catch (InputMismatchException o) {
+                                    System.out.println("Please enter the element in ArrayList as number NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            arr1.remove(0);
+
+                            //linear traversal of arrayList
+                            System.out.print("Linear Traversal ArrayList --> ");
+                            for (int i = 0; i < arr1.size(); i++) {
+                                System.out.print(arr1.get(i) + " ");
+                            }    
+                            
+                            //printing the element of ArrayList in reverse traversal
+                            System.out.print("\nReverse traversal of arrayList --> ");
+                            for ( int i = arr1.size()-1; i >= 0; i--) {
+                                System.out.print(arr1.get(i) + " ");
+                            }
+
+                            break;
+
+                        case 2:
+                            //Deleted at given location
+                            int numberC;
+                            while (true) {
+                                try {
+                                    System.out.print("How many the element you want to inserted in arrayList --> ");
+                                    numberC = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException q) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            ArrayList<Integer> arr2 = new ArrayList<>();
+
+                            while (true) {
+                                try {
+                                    //input the element in arrayList
+                                    for (int i = 0; i < numberC; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr2.add(input.nextInt());
+                                    }
+                                    break;
+                                }
+                                catch (InputMismatchException r) {
+                                    System.out.println("Please enter the element in ArrayList as number NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            int indexNumB;
+                            while (true) {
+                                try {
+                                    System.out.print("Enter the index number where you want to deleted --> ");
+                                    indexNumB = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException t) {
+                                    System.out.println("Please enter the numeric number NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            arr2.remove(indexNumB);
+
+                            //linear traversal of arrayList
+                            System.out.print("Linear Traversal ArrayList --> ");
+                            for (int i = 0; i < arr2.size(); i++) {
+                                System.out.print(arr2.get(i) + " ");
+                            }    
+                            
+                            //printing the element of ArrayList in reverse traversal
+                            System.out.print("\nReverse traversal of arrayList --> ");
+                            for ( int i = arr2.size()-1; i >= 0; i--) {
+                                System.out.print(arr2.get(i) + " ");
+                            }
+
+                            break;
+
+                        case 3:
+                            //Deleted at End
+                            int numberD;
+                            while (true) {
+                                try {
+                                    System.out.print("How many the element you want to inserted in arrrayList --> ");
+                                    numberD = input.nextInt();
+                                    break;
+                                }
+                                catch (InputMismatchException q) {
+                                    System.out.println("Please enter the numeric value NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            ArrayList<Integer> arr3 = new ArrayList<>();
+
+                            while (true) {
+                                try {
+                                    //input the element in arrayList
+                                    for (int i = 0; i < numberD; i++) {
+                                        System.out.print("Enter the element in " + i + " location --> ");
+                                        arr3.add(input.nextInt());
+                                    }
+                                    break;
+                                }
+                                catch (InputMismatchException r) {
+                                    System.out.println("Please enter the element in ArrayList as number NOT character");
+                                    input.next();
+                                }
+                            }
+
+                            arr3.remove(arr3.size() - 1);
+
+                             //linear traversal of arrayList
+                            System.out.print("Linear Traversal ArrayList --> ");
+                            for (int i = 0; i < arr3.size(); i++) {
+                                System.out.print(arr3.get(i) + " ");
+                            }    
+                            
+                            //printing the element of ArrayList in reverse traversal
+                            System.out.print("\nReverse traversal of arrayList --> ");
+                            for ( int i = arr3.size()-1; i >= 0; i--) {
+                                System.out.print(arr3.get(i) + " ");
+                            }
+
+                            break;
+                        
+                        default:
+                            System.out.println("Invalid Choice Number!");
+                    }
+                }
+
+                break;
+
+            default:
+                System.out.println("Invalid choice3!");
+            
+        }
+    }
+}
